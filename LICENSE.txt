@@ -1,0 +1,86 @@
+MirrorMax Free Use and Sharing License
+Version 1.0
+
+Copyright (c) 2026 Background Gremlin Group.
+All rights not expressly granted below are reserved.
+
+Developed by the Background Gremlin Group
+- Creating Unique Tools for Unique Individuals -
+
+1. What this license covers
+
+This license applies to MirrorMax and the original MirrorMax source code,
+documentation, and assets that Background Gremlin Group distributes under
+this notice. It does not grant rights in third-party material. That material
+remains subject to its own license or the rights of its owner.
+
+2. Free use
+
+Background Gremlin Group grants you a worldwide, nonexclusive, royalty-free
+license to download, install, and run official, unmodified copies of
+MirrorMax for personal, educational, or business use. You may read the
+published source and build it without changes for your own use. You may
+copy the software as needed for these permitted uses and for backup.
+
+You may use MirrorMax to create media for personal or commercial projects.
+This license does not give Background Gremlin Group rights in your content
+merely because you processed it with MirrorMax. You are responsible for
+having the rights to use and share the material you put into the app and any
+third-party material included in your exports.
+
+3. Free sharing
+
+You may share or mirror an official APK or an official source archive
+without charge, provided that:
+
+- The file is complete and byte-for-byte unchanged.
+- This license accompanies the download, either inside the original package
+  or alongside it, and existing copyright, attribution, and license notices
+  are preserved.
+- You do not claim authorship, endorsement, or official distributor status,
+  and you do not impose additional terms that limit recipients' rights
+  under this license.
+
+You may link directly to the project's official downloads.
+
+4. What is not permitted
+
+Except where applicable law permits an activity despite these terms, you may
+not modify, patch, translate, or create derivative versions of MirrorMax or
+its covered source and assets. You may not distribute modified or unofficial
+builds, re-sign or repackage the official APK for redistribution, or reuse its
+code or covered assets in another product without prior written permission
+from Background Gremlin Group.
+
+You may not sell, rent, sublicense for a fee, put behind a paywall, or bundle
+MirrorMax as part of a paid software distribution without prior written
+permission. This restriction is on monetizing distribution of MirrorMax,
+not on using the app for paid work or selling media you make with it.
+
+This license does not grant rights to use the MirrorMax or Background Gremlin
+Group names or logos as your own branding. You may use the names to identify
+the original app accurately.
+
+5. Optional donations and tips
+
+Donations and tips to Background Gremlin Group are welcome, but are never
+required to download, use, or share MirrorMax. A tip does not buy additional
+rights and is not a condition of access or support.
+
+6. End of permission
+
+Permissions under this license end if you violate its terms. This does not
+end the permissions of recipients who received a copy from you and continue
+to comply with the license.
+
+7. No warranty
+
+To the extent permitted by law, MirrorMax is provided "as is", without
+express or implied warranties, including merchantability, fitness for a
+particular purpose, and noninfringement. To the extent permitted by law,
+Background Gremlin Group is not liable for damages or losses arising from
+use of or inability to use MirrorMax. Nothing in this license limits rights
+or remedies that applicable law does not allow you to waive.
+
+Project and permissions inquiries:
+https://github.com/bggg-gizmo/mirrormax
