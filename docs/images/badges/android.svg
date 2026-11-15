@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="124" height="24" viewBox="0 0 124 24" role="img" aria-labelledby="badge-title">
+  <title id="badge-title">ANDROID 10+</title>
+  <defs><clipPath id="shape"><rect width="124" height="24" rx="6"/></clipPath></defs>
+  <g clip-path="url(#shape)">
+    <rect width="124" height="24" fill="#262236"/>
+    <rect x="75" width="49" height="24" fill="#BAFF46"/>
+  </g>
+  <g font-family="Verdana,Arial,sans-serif" font-size="10" font-weight="700" letter-spacing=".55" text-anchor="middle">
+    <text x="37.5" y="16" fill="#F1ECFF">ANDROID</text>
+    <text x="99.5" y="16" fill="#19251B">10+</text>
+  </g>
+</svg>

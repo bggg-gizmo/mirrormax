@@ -9,9 +9,17 @@
 
 <p align="center">
   <a href="https://github.com/bggg-gizmo/mirrormax/raw/refs/heads/main/dist/mirrormax.apk"><strong>↓ Download APK</strong></a>
+  &nbsp;·&nbsp; <a href="https://github.com/bggg-gizmo/mirrormax/raw/refs/heads/main/dist/MirrorMax-1.0.1-source.zip">↓ Download source</a>
   &nbsp;·&nbsp; <a href="dist/SHA256SUMS">SHA-256</a>
   &nbsp;·&nbsp; <a href="CHANGELOG.md">Changelog</a>
   &nbsp;·&nbsp; <a href="docs/BUILDING.md">Build from source</a>
+</p>
+
+<p align="center">
+  <a href="CHANGELOG.md#101"><img src="docs/images/badges/version.svg" alt="Version 1.0.1"></a>
+  <a href="#install-the-release"><img src="docs/images/badges/android.svg" alt="Android 10 or newer"></a>
+  <a href="docs/BUILDING.md"><img src="docs/images/badges/build.svg" alt="Direct DEX build"></a>
+  <a href="dist/SHA256SUMS"><img src="docs/images/badges/verify.svg" alt="SHA-256 checksums"></a>
 </p>
 
 # MirrorMax
@@ -48,12 +56,14 @@ A directional mirror keeps the named half and reflects it into the opposite half
 | Release file | Verification |
 | --- | --- |
 | [mirrormax.apk](https://github.com/bggg-gizmo/mirrormax/raw/refs/heads/main/dist/mirrormax.apk) | [SHA256SUMS](dist/SHA256SUMS) |
+| [MirrorMax-1.0.1-source.zip](https://github.com/bggg-gizmo/mirrormax/raw/refs/heads/main/dist/MirrorMax-1.0.1-source.zip) | [SHA256SUMS](dist/SHA256SUMS) |
 
 ```text
-2cb1e5188bb5ce4951ea769b95dca3cd69592156f2afeb8129a35d38d62f1dd3
+2cb1e5188bb5ce4951ea769b95dca3cd69592156f2afeb8129a35d38d62f1dd3  mirrormax.apk
+d68b69606c88214576d13de20b03f7804d222a7c8edbb43659c01dd01a3d67fb  MirrorMax-1.0.1-source.zip
 ```
 
-From the folder containing the download and checksum file, run `sha256sum -c SHA256SUMS`. On Windows, run `Get-FileHash .\mirrormax.apk -Algorithm SHA256` in PowerShell.
+From the folder containing both downloads and the checksum file, run `sha256sum -c SHA256SUMS`. If you downloaded only one file, run `sha256sum` on that file and compare it with its line above. On Windows, run `Get-FileHash .\mirrormax.apk -Algorithm SHA256` or `Get-FileHash .\MirrorMax-1.0.1-source.zip -Algorithm SHA256` in PowerShell.
 
 <details>
 <summary>Updating from an earlier build</summary>

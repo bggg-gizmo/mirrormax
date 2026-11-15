@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="112" height="24" viewBox="0 0 112 24" role="img" aria-labelledby="badge-title">
+  <title id="badge-title">BUILD DEX</title>
+  <defs><clipPath id="shape"><rect width="112" height="24" rx="6"/></clipPath></defs>
+  <g clip-path="url(#shape)">
+    <rect width="112" height="24" fill="#262236"/>
+    <rect x="61" width="51" height="24" fill="#C1B6FA"/>
+  </g>
+  <g font-family="Verdana,Arial,sans-serif" font-size="10" font-weight="700" letter-spacing=".55" text-anchor="middle">
+    <text x="30.5" y="16" fill="#F1ECFF">BUILD</text>
+    <text x="86.5" y="16" fill="#231B35">DEX</text>
+  </g>
+</svg>
