@@ -1,0 +1,9 @@
+png MirrorMax_20261115_023911_037.png pixel-exact
+sample-mp4 MirrorMax_20261115_023935_461.mp4 (672, 1024, 3) 2.0s audio=False
+still-mp4 MirrorMax_20261115_023940_725.mp4 (160, 240, 3) 2.0s audio=False
+gif MirrorMax_20261115_023942_237.gif 8 exact frames, timings and endless loop
+gif-mp4 MirrorMax_20261115_023943_848.mp4 (160, 240, 3) 1.01s audio=False
+video-audio MirrorMax_20261115_023946_838.mp4 (160, 240, 3) 1.021678s audio=True
+video-silent MirrorMax_20261115_023949_654.mp4 (160, 240, 3) 1.0s audio=False
+mov-audio MirrorMax_20261115_023954_333.mp4 (160, 240, 3) 1.021678s audio=True
+All Android-exported files valid and expected two-pass reflection confirmed.

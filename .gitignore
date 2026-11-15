@@ -1,0 +1,20 @@
+# Build products and private signing material
+/out/
+/local/
+/test/classes/
+/test/fixtures/
+/test/android/out/
+/test/android/bridge/
+/test/android/result.txt
+**/__pycache__/
+*.py[cod]
+*.jks
+*.keystore
+*.p12
+*.pfx
+*.idsig
+.env
+.env.*
+.local.properties
+local.properties
+.DS_Store

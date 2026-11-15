@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="color-scheme" content="dark"><meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'">
+<title>MirrorMax</title><link rel="stylesheet" href="studio.css"><script src="studio.js" defer></script></head><body>
+<svg class="defs" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+<symbol id="mark" viewBox="0 0 32 32"><path fill="currentColor" stroke="none" d="m5 9 9-3v20l-9-3zm22 0-9-3v20l9-3z"/><path stroke="#19251b" stroke-width="2" d="M10 12v8m12-8v8"/></symbol>
+<symbol id="menuIcon" viewBox="0 0 24 24"><path d="M5 6.5h14M5 12h14M5 17.5h14"/></symbol>
+<symbol id="upload" viewBox="0 0 24 24"><path d="M12 16V4m-4 4 4-4 4 4M5 15v4a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-4"/></symbol>
+<symbol id="download" viewBox="0 0 24 24"><path d="M12 4v12m-4-4 4 4 4-4M5 16v3a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-3"/></symbol>
+<symbol id="imageIcon" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="3"/><circle cx="9" cy="9" r="1"/><path d="m5 17 5-4 3 2 3-4 3 3"/></symbol>
+<symbol id="layers" viewBox="0 0 24 24"><path d="m12 3 9 5-9 5-9-5 9-5zm-8 9 8 5 8-5M4 16l8 5 8-5"/></symbol>
+<symbol id="help" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9 9a3 3 0 1 1 6 0c0 2-3 2-3 4m0 3h.01"/></symbol>
+<symbol id="resetIcon" viewBox="0 0 24 24"><path d="M6 8h4V4M6 8a7 7 0 1 1-.8 7"/></symbol>
+<symbol id="folder" viewBox="0 0 24 24"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></symbol>
+<symbol id="eye" viewBox="0 0 24 24"><path d="M2 12s3.6-6 10-6 10 6 10 6-3.6 6-10 6-10-6-10-6z"/><circle cx="12" cy="12" r="2.4"/></symbol>
+<symbol id="playIcon" viewBox="0 0 24 24"><path d="m8 5 11 7-11 7z" fill="currentColor" stroke="none"/></symbol>
+<symbol id="pauseIcon" viewBox="0 0 24 24"><path d="M9 5v14m6-14v14" stroke-width="3"/></symbol>
+<symbol id="sound" viewBox="0 0 24 24"><path d="M4 9h4l5-4v14l-5-4H4zm12 0a4 4 0 0 1 0 6m2-9a8 8 0 0 1 0 12"/></symbol>
+<symbol id="muteIcon" viewBox="0 0 24 24"><path d="M4 9h4l5-4v14l-5-4H4zm12 1 4 4m0-4-4 4"/></symbol>
+<symbol id="closeIcon" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+<symbol id="chev" viewBox="0 0 24 24"><path d="m7 10 5 5 5-5"/></symbol>
+<symbol id="share" viewBox="0 0 24 24"><path d="m8 12 8-5m-8 5 8 5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="5" r="2.5"/><circle cx="18" cy="19" r="2.5"/></symbol>
+</svg>
+<header class="appbar"><div class="brand"><div class="logo"><svg><use href="#mark"/></svg></div><div><h1>MirrorMax</h1><p>REFLECTION STUDIO</p></div></div>
+<button id="menu" class="icon" aria-label="Studio menu" aria-haspopup="menu" aria-expanded="false"><svg><use href="#menuIcon"/></svg></button></header>
+<main class="work">
+  <section class="stage" aria-label="Media preview">
+    <div class="status"><span><i></i> LIVE PREVIEW</span><span class="badge" id="badge">NO SOURCE</span></div>
+    <div class="viewport" id="viewport">
+      <div class="mount" id="mount" hidden aria-label="Mirrored media"></div>
+      <div class="intro" id="intro"><div class="ornament" aria-hidden="true"></div><div><h2>Find your other side.</h2><p>Open an image, GIF, MP4 or MOV.</p></div></div>
+    </div>
+    <div class="media"><div class="meta"><strong id="filename">No media selected</strong><span id="details">Your original stays untouched</span></div>
+    <div class="playback">
+      <button class="icon small" id="play" aria-label="Pause playback" hidden><svg><use href="#pauseIcon"/></svg></button>
+      <button class="icon small" id="mute" aria-label="Mute preview" hidden><svg><use href="#sound"/></svg></button>
+      <button class="icon small" id="compare" disabled aria-label="Show original" aria-pressed="false"><svg><use href="#eye"/></svg></button>
+    </div></div>
+  </section>
+  <section class="editor" aria-label="Mirror controls">
+    <div class="editorHead"><div><p class="eyebrow">MIRROR CONTROLS</p><h2>Build a reflection</h2></div>
+    <button class="reset" id="reset"><svg><use href="#resetIcon"/></svg> Reset</button></div>
+    <div class="passes">
+      <article class="pass"><header><span class="index">01</span><div><h3>First pass</h3><p>Reflect the original</p></div></header>
+        <div class="choices" id="pass1"></div></article>
+      <article class="pass"><header><span class="index second">02</span><div><h3>Second pass</h3><p>Reflect the result again</p></div>
+        <label class="checkbox enable"><input id="two" type="checkbox"><span>Enable</span></label></header><div class="choices" id="pass2" hidden></div></article>
+    </div>
+  </section>
+</main>
+<footer class="bar"><button class="action ghost" id="open"><svg><use href="#upload"/></svg><span>Open media</span></button>
+<button class="action primary" id="export" disabled><svg><use href="#download"/></svg><span>Export</span></button></footer>
+<div class="shade" id="shade" hidden></div>
+<div class="dropdown" id="dropdown" role="menu" aria-label="Studio menu" hidden>
+<button id="sample" role="menuitem"><svg><use href="#imageIcon"/></svg>Try a sample</button><button id="files" role="menuitem"><svg><use href="#folder"/></svg>Exports</button>
+<button id="guide" role="menuitem"><svg><use href="#layers"/></svg>Mirror controls guide</button><button id="about" role="menuitem"><svg><use href="#help"/></svg>About MirrorMax</button></div>
+<section class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sheetTitle" tabindex="-1" hidden><div class="grip"></div>
+<header class="sheetHead"><div><p class="eyebrow" id="sheetKicker"></p><h2 id="sheetTitle"></h2></div><button class="icon" id="close" aria-label="Close dialog"><svg><use href="#closeIcon"/></svg></button></header>
+<div id="content"></div></section>
+<div class="notice" id="notice" role="status" aria-live="polite" hidden></div>
+</body></html>

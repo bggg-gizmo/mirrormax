@@ -1,0 +1,12 @@
+INSTRUMENTATION_RESULT: stream=
+mirror-fixture.png > png at Download/MirrorMax/Exports/MirrorMax_20261115_024308_530.png
+MP4 1024x672 frames=48 audio=false Desert Dusk.png > mp4 at Download/MirrorMax/Exports/MirrorMax_20261115_024331_530.mp4
+MP4 240x160 frames=48 audio=false mirror-fixture.png > mp4 at Download/MirrorMax/Exports/MirrorMax_20261115_024336_337.mp4
+mirror-fixture.gif > gif at Download/MirrorMax/Exports/MirrorMax_20261115_024337_697.gif
+MP4 240x160 frames=8 audio=false mirror-fixture.gif > mp4 at Download/MirrorMax/Exports/MirrorMax_20261115_024339_237.mp4
+MP4 240x160 frames=8 audio=true mirror-fixture.mp4 > mp4 with audio at Download/MirrorMax/Exports/MirrorMax_20261115_024342_375.mp4
+MP4 240x160 frames=8 audio=false mirror-fixture.mp4 > mp4 at Download/MirrorMax/Exports/MirrorMax_20261115_024345_036.mp4
+MP4 240x160 frames=8 audio=true mirror-fixture.mov > mp4 with audio at Download/MirrorMax/Exports/MirrorMax_20261115_024349_414.mp4
+ANDROID EXPORT INTEGRATION PASSED
+
+INSTRUMENTATION_CODE: -1
